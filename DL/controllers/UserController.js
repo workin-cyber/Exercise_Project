@@ -1,4 +1,4 @@
-require('./db')
+require('../db')
 const UserModel = require('../models/UserModel')
 
 async function create(data) {

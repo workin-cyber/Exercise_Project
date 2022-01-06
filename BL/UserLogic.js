@@ -15,9 +15,9 @@ async function update(data) {
 
 async function register(data) {
 
-    if (!data.firstName || !data.lastName)
-        throw 'first and last name are required!'
-    data.name = `${data.firstName} ${data.lastName}`
+    // if (!data.firstName || !data.lastName)
+    //     throw 'first and last name are required!'
+    // data.name = `${data.firstName} ${data.lastName}`
 
     data.password = bcryptjs.hashSync(data.password)
 

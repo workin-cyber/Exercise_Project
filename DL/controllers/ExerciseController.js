@@ -1,4 +1,4 @@
-require('./db')
+require('../db')
 const ExerciseModel = require('../models/ExerciseModel')
 
 async function create(data) {
