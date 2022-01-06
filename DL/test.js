@@ -1,5 +1,5 @@
-require('../db')
-const execModel = require('./ExerciseModel');
+require('./db')
+const execModel = require('./models/ExerciseModel');
 
 const execTemplate = {
     icon:"icon.jpg",
