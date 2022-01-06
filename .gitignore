@@ -1,4 +1,3 @@
-.env
 node_modules/.package-lock.json
 node_modules/@types/node/assert.d.ts
 node_modules/@types/node/async_hooks.d.ts
@@ -912,3 +911,4 @@ node_modules/whatwg-url/lib/URLSearchParams-impl.js
 node_modules/whatwg-url/lib/URLSearchParams.js
 node_modules/whatwg-url/lib/utils.js
 node_modules/whatwg-url/lib/VoidFunction.js
+.env
