@@ -26,12 +26,12 @@ const schemaExercise = new mongoose.Schema({
     },
     exec_type: {
         type: String,
-        enum: ["short", "rolling", " tutorial"],
+        enum: ["short", "rolling", "tutorial"],
         required: true
     },
     difficulty: {
         type: String,
-        enum: ["easy", "medium", " hard"],
+        enum: ["easy", "medium", "hard"],
         required: true
     },
     tags: [String],
@@ -46,7 +46,7 @@ const schemaExercise = new mongoose.Schema({
     content: {
         content:{
             type:String,
-            required:true
+            // required:true
         },
         sources : [{
             name: String,
