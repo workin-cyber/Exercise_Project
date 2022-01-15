@@ -2,18 +2,18 @@ const ExerciseController = require('../DL/controllers/ExerciseController')
 
 async function create(data) {
 
-    return ExerciseController.create(data)
+    return await ExerciseController.create(data)
 }
 
 async function read(_id) {
     let filter =  _id ? { _id } : {}
-    return ExerciseController.read(filter)
+    return await ExerciseController.read(filter)
 }
 
 
 async function update(data) {
     data.lastSeen = Date.now()
-    return ExerciseController.update(data._id, data)
+    return await ExerciseController.update(data._id, data)
 }
 
 module.exports = {

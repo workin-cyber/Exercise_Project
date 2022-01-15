@@ -6,7 +6,7 @@ async function create(data) {
 }
 
 async function read(filter = {}, projection) {
-    return await ExerciseModel.find(filter, projection)
+    return await ExerciseModel.find(filter).projection(projection)
 }
 
 async function update(_id, data) {
