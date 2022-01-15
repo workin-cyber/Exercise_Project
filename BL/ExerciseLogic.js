@@ -16,9 +16,14 @@ async function update(data) {
     return await ExerciseController.update(data._id, data)
 }
 
+async function del(id) {
+    return await ExerciseController.remove(id)
+}
+
 module.exports = {
-    ...ExerciseController,
+    // ...ExerciseController,
     create,
     read,
-    update
+    update,
+    del
 }

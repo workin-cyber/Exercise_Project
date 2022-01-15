@@ -18,6 +18,7 @@ module.exports = app => {
     app.post('/register', async (req, res) => {
         try {
             let result = await UserLogic.register(req.body)
+            
             res.send(result)
         }
         catch (err) {
